@@ -1,0 +1,63 @@
+name: setsistemas
+description: A new Flutter project.
+publish_to: 'none'
+
+version: 0.1.0
+
+environment:
+  sdk: '>=3.0.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  shared_preferences: ^2.1.2
+  flutter_launcher_icons: ^0.13.1
+  flutter_modular: ^5.0.3
+  mobx: ^2.2.0
+  reactive_forms: ^16.0.1
+  badges: ^3.1.1
+
+
+dev_dependencies:
+  build_runner:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
+    - assets/client.jpg
+    - assets/coin.png
+    - assets/logo_client.png
+    - assets/back_login.png
+    - assets/back_load.png
+    - assets/ico_panfleto.png
+    - assets/ico_comochega.png
+    - assets/ico_indique.png
+    - assets/ico_chat.png
+    - assets/gift.png
+    - assets/win.png
+    - assets/back_card.png
+    - assets/ico_map.png
+    - assets/smile.png
+    - assets/happy_cadastro.png
+    - assets/cupom.png
+    - assets/car.png
+    - assets/ativo.png
+    - assets/camera.png
+    - assets/planImage.png
+    - assets/googleMapStyle1.json
+    - assets/logo.png
+    - assets/logo_client_vertical.png
+    - assets/back_login.png
+
+
+flutter_icons:
+    android: "launcher_icon"
+    ios: false
+    image_path: "assets/logo.png"
