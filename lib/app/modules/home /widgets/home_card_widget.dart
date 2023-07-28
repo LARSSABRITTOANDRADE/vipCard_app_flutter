@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:setsistemas/app/core/ui/theme/colors.dart';
 
 class HomeCardWidget extends StatelessWidget {
   final String image;
@@ -13,7 +12,8 @@ class HomeCardWidget extends StatelessWidget {
       this.onPressed,
       required this.image,
       required this.title,
-      required this.subtitle, required this.valor})
+      required this.subtitle,
+      required this.valor})
       : super(key: key);
 
   @override

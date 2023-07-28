@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:setsistemas/app/core/ui/theme/colors.dart';
-import 'package:setsistemas/app/core/ui/widgets/app_logo.widget/app_logo_widget.dart';
+import 'package:setsistemas/app/core/ui/widgets/app_logo/app_logo_widget.dart';
 import 'package:setsistemas/app/core/ui/widgets/button/flat_button_widget.dart';
 import 'package:setsistemas/app/modules/auth/sign-in/widgets/elevatedbutton_widget.dart';
 
