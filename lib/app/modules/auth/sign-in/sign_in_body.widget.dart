@@ -73,7 +73,8 @@ class SignInBodyWidget extends StatelessWidget {
                             },
                           ),
                           const SizedBox(height: 10),
-                          const ElevatedButtonWidget(label: "Primeiro Acesso")
+                          const ElevatedButtonWidget(label: "Primeiro Acesso"),
+                          const SizedBox(height: 10),
                         ],
                       )
                     ],
