@@ -140,52 +140,50 @@ class HomepageBodyWidget extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            const Expanded(
-                              child: Align(
-                                alignment: Alignment.topCenter,
-                                child: Column(
-                                  children: [
-                                    Row(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.end,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: [
-                                        Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text('R\$ 135',
-                                                style: TextStyle(
-                                                  fontFamily: 'Orbitron',
-                                                  color: Colors.black54,
-                                                  fontSize: 20,
-                                                  fontWeight: FontWeight.bold,
-                                                ))
-                                          ],
-                                        ),
-                                        Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              ',00',
+                            const Align(
+                              alignment: Alignment.topCenter,
+                              child: Column(
+                                children: [
+                                  Row(
+                                    crossAxisAlignment: CrossAxisAlignment.end,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.end,
+                                        children: [
+                                          Text('R\$ 135',
                                               style: TextStyle(
                                                 fontFamily: 'Orbitron',
                                                 color: Colors.black54,
                                                 fontSize: 20,
                                                 fontWeight: FontWeight.bold,
-                                              ),
+                                              ))
+                                        ],
+                                      ),
+                                      Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            ',00',
+                                            style: TextStyle(
+                                              fontFamily: 'Orbitron',
+                                              color: Colors.black54,
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.bold,
                                             ),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                  ],
-                                ),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ],
                               ),
                             ),
-                            const ElevatedButtonWidget(label: "Economizômetro"),
+                            const Expanded(
+                                child: ElevatedButtonWidget(
+                                    label: "Economizômetro")),
                           ],
                         ),
                       ),

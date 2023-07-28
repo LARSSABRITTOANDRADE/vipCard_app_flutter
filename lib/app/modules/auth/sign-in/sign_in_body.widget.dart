@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:setsistemas/app/core/ui/theme/colors.dart';
+import 'package:reactive_forms/reactive_forms.dart';
 import 'package:setsistemas/app/core/ui/widgets/app_logo/app_logo_widget.dart';
 import 'package:setsistemas/app/core/ui/widgets/button/flat_button_widget.dart';
+import 'package:setsistemas/app/modules/auth/sign-in/widgets/cpf_widget.dart';
 import 'package:setsistemas/app/modules/auth/sign-in/widgets/elevatedbutton_widget.dart';
+import 'package:setsistemas/app/modules/auth/sign-in/widgets/password_widget.dart';
+import 'package:setsistemas/store/sign_in.store.dart';
 
 class SignInBodyWidget extends StatelessWidget {
-  const SignInBodyWidget({super.key});
+  SignInBodyWidget({super.key});
+
+  final SignInStore state = Modular.get<SignInStore>();
 
   @override
   Widget build(BuildContext context) {
@@ -19,49 +24,14 @@ class SignInBodyWidget extends StatelessWidget {
             SizedBox(
               child: Padding(
                 padding: const EdgeInsets.all(20),
-                child: Form(
+                child: ReactiveForm(
+                  formGroup: state.formGroup,
                   child: Column(
                     children: [
                       const SizedBox(height: 80),
-                      TextField(
-                        decoration: InputDecoration(
-                          enabledBorder: InputBorder.none,
-                          filled: true,
-                          label: const Text('CPF'),
-                          prefixIcon: Icon(
-                            Icons.person,
-                            color: Colors.grey.shade500,
-                          ),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(16),
-                          ),
-                        ),
-                      ),
+                      const CpfWidget(),
                       const SizedBox(height: 20),
-                      TextField(
-                        decoration: InputDecoration(
-                            enabledBorder: InputBorder.none,
-                            filled: true,
-                            label: const Text('Senha'),
-                            prefixIcon: Icon(
-                              Icons.lock,
-                              color: Colors.grey.shade500,
-                            ),
-                            suffixIcon: Icon(
-                              Icons.remove_red_eye_outlined,
-                              color: Colors.grey.shade500,
-                            ),
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                            focusedBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(30),
-                              borderSide: const BorderSide(
-                                color: primary,
-                                width: 2.0,
-                              ),
-                            )),
-                      ),
+                      const PasswordWidget(),
                       const SizedBox(height: 50),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,

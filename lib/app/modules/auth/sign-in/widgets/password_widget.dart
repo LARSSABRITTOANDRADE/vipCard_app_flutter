@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:setsistemas/app/core/ui/widgets/input/input_tex_widget.dart';
 
-class CpfWidget extends StatelessWidget {
-  const CpfWidget({
+class PasswordWidget extends StatelessWidget {
+  const PasswordWidget({
     Key? key,
   }) : super(key: key);
 
@@ -10,8 +10,9 @@ class CpfWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return InputTextWidget(
       key: UniqueKey(),
-      label: 'CPF',
-      formControlName: 'nm_cpf',
+      isPassword: true,
+      label: 'Senha',
+      formControlName: 'nm_senha',
     );
   }
 }
