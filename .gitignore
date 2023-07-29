@@ -1,0 +1,7 @@
+
+.dart_tool/
+build/
+
+*.g.dart
+*.mocks.dart
+*.reflectable.dart
