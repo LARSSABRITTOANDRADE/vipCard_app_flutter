@@ -56,13 +56,17 @@ class MenuPageBodyWidget extends StatelessWidget {
                 FlatButtonWidget(
                   label: "Meus Veículos",
                   icon: Icons.car_rental,
-                  onPressed: () {},
+                  onPressed: () {
+                    Modular.to.pushNamed('/home/veiculos/');
+                  },
                 ),
                 const SizedBox(height: 10),
                 FlatButtonWidget(
-                    onPressed: () {},
+                    onPressed: () {
+                      Modular.to.pushNamed('/home/financeiro/');
+                    },
                     icon: Icons.attach_money,
-                    label: "Financeiro")
+                    label: "Financeiro"),
               ],
             ),
           ),

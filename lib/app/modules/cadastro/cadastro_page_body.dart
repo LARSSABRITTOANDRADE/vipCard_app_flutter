@@ -23,55 +23,57 @@ class CadastroPageBodyWidget extends StatelessWidget {
       padding: const EdgeInsets.all(15.0),
       child: ReactiveForm(
         formGroup: state.formGroup,
-        child: Column(
-          children: [
-            const Text("Preencha os dados abaixo para começar o cadastro!"),
-            const SizedBox(height: 10),
-            Center(
-              child: CircleAvatar(
-                backgroundColor: Colors.transparent,
-                radius: 70,
-                child: ClipOval(
-                  child: Image.asset(
-                    "assets/avatar.png",
-                    fit: BoxFit.cover,
-                    matchTextDirection: true,
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              const Text("Preencha os dados abaixo para começar o cadastro!"),
+              const SizedBox(height: 10),
+              Center(
+                child: CircleAvatar(
+                  backgroundColor: Colors.transparent,
+                  radius: 70,
+                  child: ClipOval(
+                    child: Image.asset(
+                      "assets/avatar.png",
+                      fit: BoxFit.cover,
+                      matchTextDirection: true,
+                    ),
                   ),
                 ),
               ),
-            ),
-            const SizedBox(height: 15),
-            const NameWidget(),
-            const SizedBox(height: 15),
-            const Wrap(
-              children: [
-                RadioInputWidget(
-                    formControlName: "nm_sexo_masculino", label: "Masculino"),
-                RadioInputWidget(
-                    formControlName: "nm_sexo_feminino", label: "Feminino"),
-              ],
-            ),
-            const SizedBox(height: 15),
-            const CpfWidget(),
-            const SizedBox(height: 15),
-            const TelefoneWidget(),
-            const SizedBox(height: 15),
-            const EmailWidget(),
-            const SizedBox(height: 15),
-            const PasswordWidget(),
-            const SizedBox(height: 15),
-            const ConfirmacaoPassWordWidget(),
-            const SizedBox(height: 20),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                FlatButtonWidget(
-                  label: "Confirmar",
-                  onPressed: () {},
-                ),
-              ],
-            )
-          ],
+              const SizedBox(height: 10),
+              const NameWidget(),
+              const SizedBox(height: 10),
+              const Wrap(
+                children: [
+                  RadioInputWidget(
+                      formControlName: "nm_sexo_masculino", label: "Masculino"),
+                  RadioInputWidget(
+                      formControlName: "nm_sexo_feminino", label: "Feminino"),
+                ],
+              ),
+              const SizedBox(height: 10),
+              const CpfWidget(),
+              const SizedBox(height: 10),
+              const TelefoneWidget(),
+              const SizedBox(height: 10),
+              const EmailWidget(),
+              const SizedBox(height: 10),
+              const PasswordWidget(),
+              const SizedBox(height: 10),
+              const ConfirmacaoPassWordWidget(),
+              const SizedBox(height: 30),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  FlatButtonWidget(
+                    label: "Confirmar",
+                    onPressed: () => Modular.to.pushNamed('/home/'),
+                  ),
+                ],
+              )
+            ],
+          ),
         ),
       ),
     ));

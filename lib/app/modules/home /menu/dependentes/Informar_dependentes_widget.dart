@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:setsistemas/app/core/ui/theme/colors.dart';
+import 'package:setsistemas/app/core/ui/widgets/card/card_widget.dart';
 
 class InformarDependentesWidget extends StatelessWidget {
   const InformarDependentesWidget({super.key});
@@ -20,7 +21,17 @@ class InformarDependentesWidget extends StatelessWidget {
           style: TextStyle(fontWeight: FontWeight.w600),
         ),
       ),
-      body: const Card(),
+      body: const SingleChildScrollView(
+        child: Column(
+          children: [
+            CardWidget(
+              text: "Nome: ",
+              subtitle: "CPF: ",
+              title: "E-mail: ",
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

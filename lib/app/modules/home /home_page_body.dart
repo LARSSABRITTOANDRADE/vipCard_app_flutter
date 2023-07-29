@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 import 'package:setsistemas/app/core/ui/theme/colors.dart';
 import 'package:setsistemas/app/modules/auth/sign-in/widgets/elevatedbutton_widget.dart';
 import 'package:setsistemas/app/modules/home%20/widgets/home_card_widget.dart';
@@ -71,7 +72,7 @@ class HomepageBodyWidget extends StatelessWidget {
             top: 30,
             child: IconButton(
               iconSize: 30,
-              onPressed: () {},
+              onPressed: () => Modular.to.pushNamed('/home/menu/'),
               icon: const Icon(Icons.menu),
               color: white,
             ),
