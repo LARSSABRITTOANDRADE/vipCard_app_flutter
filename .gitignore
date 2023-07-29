@@ -1,0 +1,22 @@
+
+
+*.g.dart
+*.mocks.dart
+*.reflectable.dart
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+ios/Flutter/flutter_export_environment.sh
+ios/Flutter/Generated.xcconfig
+ios/Runner/Generated*
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+coverage/
+ios/Runner/
+ios/Flutter/

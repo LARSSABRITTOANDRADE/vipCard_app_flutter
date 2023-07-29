@@ -8,20 +8,22 @@ class FlatButtonWidget extends StatelessWidget {
   final String? color;
   final ButtonExpand? expand;
   final Function? onPressed;
+  final IconData? icon;
 
-  const FlatButtonWidget({
-    super.key,
-    required this.label,
-    this.color,
-    this.expand,
-    this.onPressed});
+  const FlatButtonWidget(
+      {super.key,
+      required this.label,
+      this.icon,
+      this.color,
+      this.expand,
+      this.onPressed});
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-        key: UniqueKey(),
-        onPressed: onPressed != null ? () => onPressed!() : null,
-        style: ElevatedButton.styleFrom(
+      key: UniqueKey(),
+      onPressed: onPressed != null ? () => onPressed!() : null,
+      style: ElevatedButton.styleFrom(
           elevation: 10,
           minimumSize: const Size(98, 38),
           backgroundColor: color != null ? getColor(color!) : green,
@@ -30,17 +32,22 @@ class FlatButtonWidget extends StatelessWidget {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(50),
           ),
-          side: const BorderSide(
-            width: 1,
-            color: green
-          )
-        ),
-        child: Text(
+          side: const BorderSide(width: 1, color: green)),
+      child:
+          Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
+        Icon(icon, size: 18.0),
+        icon != null
+            ? Container(
+                margin: const EdgeInsets.only(left: 5.0),
+              )
+            : Container(),
+        Text(
           label,
-          style: const TextStyle(
-              color: white,
-          ),
+          softWrap: false,
+          textAlign: TextAlign.center,
+          overflow: TextOverflow.ellipsis,
         ),
+      ]),
     );
   }
 }

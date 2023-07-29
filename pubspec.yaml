@@ -18,9 +18,11 @@ dependencies:
   mobx: ^2.2.0
   reactive_forms: ^16.0.3
   badges: ^3.1.1
+  json_annotation: ^4.7.0
 
 
 dev_dependencies:
+  mobx_codegen:
   build_runner:
   flutter_test:
     sdk: flutter
@@ -30,6 +32,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+    - assets/avatar.png
     - assets/logo.png
     - assets/client.jpg
     - assets/coin.png

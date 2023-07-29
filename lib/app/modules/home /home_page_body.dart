@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 import 'package:setsistemas/app/core/ui/theme/colors.dart';
 import 'package:setsistemas/app/modules/auth/sign-in/widgets/elevatedbutton_widget.dart';
 import 'package:setsistemas/app/modules/home%20/widgets/home_card_widget.dart';
@@ -71,7 +72,7 @@ class HomepageBodyWidget extends StatelessWidget {
             top: 30,
             child: IconButton(
               iconSize: 30,
-              onPressed: () {},
+              onPressed: () => Modular.to.pushNamed('/home/menu/'),
               icon: const Icon(Icons.menu),
               color: white,
             ),
@@ -140,52 +141,50 @@ class HomepageBodyWidget extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            const Expanded(
-                              child: Align(
-                                alignment: Alignment.topCenter,
-                                child: Column(
-                                  children: [
-                                    Row(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.end,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: [
-                                        Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            Text('R\$ 135',
-                                                style: TextStyle(
-                                                  fontFamily: 'Orbitron',
-                                                  color: Colors.black54,
-                                                  fontSize: 20,
-                                                  fontWeight: FontWeight.bold,
-                                                ))
-                                          ],
-                                        ),
-                                        Column(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              ',00',
+                            const Align(
+                              alignment: Alignment.topCenter,
+                              child: Column(
+                                children: [
+                                  Row(
+                                    crossAxisAlignment: CrossAxisAlignment.end,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.end,
+                                        children: [
+                                          Text('R\$ 135',
                                               style: TextStyle(
                                                 fontFamily: 'Orbitron',
                                                 color: Colors.black54,
                                                 fontSize: 20,
                                                 fontWeight: FontWeight.bold,
-                                              ),
+                                              ))
+                                        ],
+                                      ),
+                                      Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            ',00',
+                                            style: TextStyle(
+                                              fontFamily: 'Orbitron',
+                                              color: Colors.black54,
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.bold,
                                             ),
-                                          ],
-                                        ),
-                                      ],
-                                    ),
-                                  ],
-                                ),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ],
                               ),
                             ),
-                            const ElevatedButtonWidget(label: "Economizômetro"),
+                            const Expanded(
+                                child: ElevatedButtonWidget(
+                                    label: "Economizômetro")),
                           ],
                         ),
                       ),
