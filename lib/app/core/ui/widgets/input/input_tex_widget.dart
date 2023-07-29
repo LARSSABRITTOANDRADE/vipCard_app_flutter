@@ -82,7 +82,6 @@ class _InputTextWidgetState<T> extends State<InputTextWidget<T>> {
             keyboardType: widget.keyboardType,
             inputFormatters: widget.mask,
             obscureText: isObscure,
-            obscuringCharacter: '●',
             decoration: InputDecoration(
                 contentPadding:
                     widget.contentPadding ?? const EdgeInsets.only(left: 18),

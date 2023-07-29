@@ -39,11 +39,14 @@ class SignInBodyWidget extends StatelessWidget {
                           FlatButtonWidget(
                             label: "Entrar",
                             onPressed: () {
-                              Modular.to.pushNamed('/home/');
+                              Modular.to.pushNamed('/home/dependentes/');
                             },
                           ),
                           const SizedBox(height: 10),
-                          const ElevatedButtonWidget(label: "Primeiro Acesso"),
+                          ElevatedButtonWidget(
+                              onPressed: () =>
+                                  Modular.to.pushNamed("/cadastro"),
+                              label: "Primeiro Acesso"),
                           const SizedBox(height: 10),
                         ],
                       )

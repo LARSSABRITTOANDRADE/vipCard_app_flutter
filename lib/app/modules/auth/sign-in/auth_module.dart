@@ -8,6 +8,7 @@ class AuthModule extends Module {
       [Bind.lazySingleton<SignInStore>((i) => SignInStore())];
 
   @override
-  List<ModularRoute> get routes =>
-      [ChildRoute("/", child: (context, args) => const SignInViewWidget())];
+  List<ModularRoute> get routes => [
+        ChildRoute("/", child: (context, args) => const SignInViewWidget()),
+      ];
 }
