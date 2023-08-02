@@ -1,6 +1,6 @@
 {
-    "name": "setsistemas",
-    "short_name": "setsistemas",
+    "name": "vipcard_app_flutter",
+    "short_name": "vipcard_app_flutter",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
