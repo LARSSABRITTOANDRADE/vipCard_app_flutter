@@ -24,7 +24,7 @@ class RaisedButtonWidget extends StatelessWidget {
         },
         style: ElevatedButton.styleFrom(
           foregroundColor: Colors.white,
-          backgroundColor: getColor(color),
+          backgroundColor: primary,
           alignment: Alignment.centerRight,
           disabledForegroundColor: Colors.white.withOpacity(0.38),
           disabledBackgroundColor: Colors.white.withOpacity(0.12),

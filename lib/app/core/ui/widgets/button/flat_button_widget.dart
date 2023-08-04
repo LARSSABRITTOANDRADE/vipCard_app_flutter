@@ -24,7 +24,7 @@ class FlatButtonWidget extends StatelessWidget {
       key: UniqueKey(),
       onPressed: onPressed != null ? () => onPressed!() : null,
       style: ElevatedButton.styleFrom(
-          elevation: 10,
+          elevation: 5,
           minimumSize: const Size(98, 38),
           backgroundColor: color != null ? getColor(color!) : green,
           disabledForegroundColor: Colors.grey.withOpacity(0.38),
@@ -34,7 +34,8 @@ class FlatButtonWidget extends StatelessWidget {
           ),
           side: const BorderSide(width: 1, color: green)),
       child:
-          Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
+          Row(
+              mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
         Icon(icon, size: 18.0),
         icon != null
             ? Container(
@@ -43,6 +44,9 @@ class FlatButtonWidget extends StatelessWidget {
             : Container(),
         Text(
           label,
+          style: const TextStyle(
+            fontWeight: FontWeight.bold
+          ),
           softWrap: false,
           textAlign: TextAlign.center,
           overflow: TextOverflow.ellipsis,

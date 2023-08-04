@@ -5,10 +5,10 @@ import 'package:setsistemas/app/core/ui/widgets/button/flat_button_widget.dart';
 import 'package:setsistemas/app/core/ui/widgets/input/input_radio.widget.dart';
 import 'package:setsistemas/app/modules/auth/sign-in/widgets/cpf_widget.dart';
 import 'package:setsistemas/app/modules/auth/sign-in/widgets/password_widget.dart';
-import 'package:setsistemas/app/modules/cadastro/widgets/confirmacao_password_widget.dart';
-import 'package:setsistemas/app/modules/cadastro/widgets/email_widget.dart';
-import 'package:setsistemas/app/modules/cadastro/widgets/name_widget.dart';
-import 'package:setsistemas/app/modules/cadastro/widgets/telefone_widget.dart';
+import 'package:setsistemas/app/modules/cadastro/pessoa/widgets/confirmacao_password_widget.dart';
+import 'package:setsistemas/app/modules/cadastro/pessoa/widgets/email_widget.dart';
+import 'package:setsistemas/app/modules/cadastro/pessoa/widgets/name_widget.dart';
+import 'package:setsistemas/app/modules/cadastro/pessoa/widgets/telefone_widget.dart';
 import 'package:setsistemas/store/cadastro.store.dart';
 
 class CadastroPageBodyWidget extends StatelessWidget {
