@@ -1,5 +1,5 @@
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:setsistemas/app/modules/cadastro/cadastro_page_view.dart';
+import 'package:setsistemas/app/modules/cadastro/pessoa/cadastro_page_view.dart';
 import 'package:setsistemas/store/cadastro.store.dart';
 
 class CadastroModule extends Module {

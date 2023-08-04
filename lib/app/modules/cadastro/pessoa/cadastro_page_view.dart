@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:setsistemas/app/core/ui/theme/colors.dart';
-import 'package:setsistemas/app/modules/cadastro/cadastro_page_body.dart';
+import 'package:setsistemas/app/modules/cadastro/pessoa/cadastro_page_body.dart';
 
 class CadastroPageViewWidget extends StatelessWidget {
   const CadastroPageViewWidget({super.key});
