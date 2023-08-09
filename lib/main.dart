@@ -9,5 +9,10 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
-  runApp(ModularApp(module: AppModule(), child: const VipCardApp()));
+  runApp(
+      ModularApp(
+          module: AppModule(),
+          child: const VipCardApp(),
+      ),
+  );
 }

@@ -7,17 +7,15 @@ class HomePageViewWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      resizeToAvoidBottomInset: false,
-      body: Container(
-        width: MediaQuery.of(context).size.width,
-        decoration: const BoxDecoration(
-          image: DecorationImage(image: AssetImage("assets/back_login.png"),
-            fit: BoxFit.fitWidth,
-          ),
+    return Container(
+      width: MediaQuery.of(context).size.width,
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage("assets/back_login.png"),
+          fit: BoxFit.cover,
         ),
-        child: const HomepageBodyWidget(),
       ),
+      child: const HomePageBody(),
     );
   }
 }

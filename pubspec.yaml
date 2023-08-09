@@ -19,6 +19,8 @@ dependencies:
   reactive_forms: ^16.0.3
   badges: ^3.1.1
   json_annotation: ^4.7.0
+  material_design_icons_flutter: ^7.0.7296
+  flutter_floating_bottom_bar: ^1.1.0
 
 
 dev_dependencies:

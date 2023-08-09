@@ -12,16 +12,20 @@ class _SplashScreenViewWidgetState extends State<SplashScreenViewWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: const EdgeInsets.all(20),
         decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage("assets/back_load.png"),
-                fit: BoxFit.fitWidth)),
+                fit: BoxFit.fitWidth),
+        ),
         child: Container(
           decoration: const BoxDecoration(gradient: appBackgroundGradient),
           child: const Center(
               child: CircularProgressIndicator(
             color: Colors.white,
-          )),
-        ));
+          ),
+          ),
+        ),
+    );
   }
 }
