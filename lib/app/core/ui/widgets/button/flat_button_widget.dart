@@ -35,14 +35,14 @@ class FlatButtonWidget extends StatelessWidget {
           side: const BorderSide(width: 1, color: green)),
       child:
           Row(
-              mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
-        Icon(icon, size: 18.0),
-        icon != null
+              mainAxisAlignment: MainAxisAlignment.center, children:[
+           Icon(icon, size: 18.0),
+           icon != null
             ? Container(
                 margin: const EdgeInsets.only(left: 5.0),
               )
             : Container(),
-        Text(
+           Text(
           label,
           style: const TextStyle(
             fontWeight: FontWeight.bold

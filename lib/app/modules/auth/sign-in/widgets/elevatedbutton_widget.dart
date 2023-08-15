@@ -15,9 +15,9 @@ class ElevatedButtonWidget extends StatelessWidget {
       key: UniqueKey(),
       onPressed: onPressed != null ? () => onPressed!() : null,
       style: ElevatedButton.styleFrom(
-          elevation: 10,
+          elevation: 2,
           minimumSize: const Size(78, 38),
-          backgroundColor: green,
+          backgroundColor: Colors.white,
           disabledForegroundColor: Colors.grey.withOpacity(0.38),
           disabledBackgroundColor: Colors.grey.withOpacity(0.12),
           shape: RoundedRectangleBorder(

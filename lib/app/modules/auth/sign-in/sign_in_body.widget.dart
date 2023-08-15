@@ -20,7 +20,7 @@ class SignInBodyWidget extends StatelessWidget {
         Column(
           children: [
             const SizedBox(height: 80),
-            const Padding(padding: EdgeInsets.all(20), child: AppLogo()),
+            const Padding(padding: EdgeInsets.all(30), child: AppLogo()),
             SizedBox(
               child: Padding(
                 padding: const EdgeInsets.all(20),
@@ -42,8 +42,7 @@ class SignInBodyWidget extends StatelessWidget {
                           ),
                           const SizedBox(height: 10),
                           ElevatedButtonWidget(
-                              onPressed: () =>
-                                  Modular.to.pushNamed("/cadastro"),
+                              onPressed: (){},
                               label: "Primeiro Acesso"),
                           const SizedBox(height: 10),
                         ],

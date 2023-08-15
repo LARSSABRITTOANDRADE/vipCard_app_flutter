@@ -9,6 +9,7 @@ const Color textBlack = Color.fromARGB(255, 1, 22, 39);
 const Color green = Color.fromARGB(255, 13, 77, 77);
 
 
+
 getColor(String color, {int? alpha}) {
   alpha = alpha != null ? _getColorFromPercent(alpha) : 255;
   switch (color) {
